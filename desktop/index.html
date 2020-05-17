@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>RPGZERA</title>
+</head>
+
+<body class="bg-dark">
+    <div class="card position-absolute align-center-div" style="width: 400px;">
+        <h3 class="text-center mt-3">RPGZERA</h3>
+        <div class="card-body">
+            <label for="txt_email">Usuario</label>
+            <input type="text" class="form-control mb-4" id="txt_email" name="txt_email">
+
+            <label for="txt_password">Senha</label>
+            <input type="password" class="form-control mb-4" id="txt_password" name="txt_password">
+
+            <a href="#">
+                Esqueceu a senha
+            </a>
+
+            <button class="btn btn-outline-dark btn-block mt-2" id="btn_login">
+                ENTRAR
+            </button>
+        </div>
+    </div>
+    <script>
+        const btnLogin = document.getElementById("btn_login");
+
+        btnLogin.addEventListener("click", () => {
+            window.location.href = "/src/lobby/lobby.html";
+        });
+    </script>
+</body>
+
+</html>
